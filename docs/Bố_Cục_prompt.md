@@ -1,8 +1,8 @@
 ---
 title: "Bố cục prompt hình ảnh photorealistic cho Google AI Pro / Flow"
-version: "1.1.0"
-last_verified: "2026-08-11"
-scope: "Google Flow, Nano Banana, Ingredients/References và Veo"
+version: "1.4.0"
+last_verified: "2026-08-12"
+scope: "Google Flow, Nano Banana, Ingredients/References, Veo và Gemini Omni"
 status: "Production guide"
 ---
 
@@ -98,7 +98,7 @@ Google khuyến nghị Ingredients có nền sạch hoặc được tách nền,
 
 Cấu trúc gốc của Google cho ảnh chân thực là: loại shot + chủ thể + bối cảnh + ánh sáng + góc máy + lens. Mẫu chính thức: [Google AI Developers — Photorealistic image prompting](https://ai.google.dev/gemini-api/docs/image-generation#prompts-for-generating-images).
 
-Dùng template mở rộng dưới đây. Prompt vận hành nên viết bằng tiếng Anh để thuật ngữ camera và production nhất quán.
+Dùng template mở rộng dưới đây. Trong `eng/Pormpt.md`, prompt vận hành viết bằng tiếng Anh. Trong `vie/Pormpt.md`, prompt phải được dịch sang tiếng Việt tự nhiên, giữ đúng thuật ngữ camera/production và không làm lệch ý nghĩa hình ảnh.
 
 ~~~text
 PURPOSE AND FORMAT
@@ -321,9 +321,40 @@ Không thay nhiều biến cùng lúc nếu cần giữ consistency.
 
 Flow hỗ trợ dùng Ingredients để giữ nhân vật/vật thể và Frames để điều khiển điểm đầu/cuối; tính năng cụ thể phụ thuộc model hiện hành: [Google Flow Help — Create videos](https://support.google.com/flow/answer/16353334?hl=en).
 
-## 9. Veo tùy chọn: animate hoặc extend
+## 9. Video AI: Gemini Omni / Veo
 
-Ảnh reference và prompt video có nhiệm vụ khác nhau:
+Trong `Pormpt.md`, **mỗi hàng timeline** phải có ít nhất một prompt video hoàn chỉnh và có thể copy trực tiếp, kể cả khi asset chính là footage thật hoặc graphic. Prompt tại các hàng đó là phương án bổ sung/thay thế hoặc motion reference; nó không đổi loại asset chính. Bản ENG dùng prompt tiếng Anh; bản VIE dùng prompt tiếng Việt đầy đủ, tự nhiên và không dùng chỉ dẫn kiểu “xem bản ENG”.
+
+Hai bản phải giữ cùng Asset ID, duration, timecode, hành động, camera và negative constraints. Bản VIE không được giữ nguyên prompt tiếng Anh hoặc dịch từng chữ làm sai thuật ngữ sản xuất hình ảnh.
+
+Cột cuối mang tên `Prompt Gemini Omni` và chỉ chứa prompt tạo video. Không đặt hướng dẫn cắt dựng, transition, overlay, compositing, typography hoặc color grading trong cột này.
+
+Với Gemini Omni:
+
+- Chọn duration linh hoạt **4–10 giây** theo lượng chuyển động cần thiết; **10 giây là giới hạn tối đa, không phải mặc định**.
+- Nếu một hàng cần nhiều clip, viết nhiều prompt con có Asset ID riêng trong cùng ô; từng prompt con vẫn tuân thủ giới hạn 4–10 giây và có timed action độc lập.
+- Một clip ưu tiên một hành động hoặc một biến đổi chính. Nếu beat cần nhiều thay đổi độc lập, tách thành nhiều asset hoặc để editor/đồ họa đảm nhiệm.
+- Phần `TIMED ACTION` phải bắt đầu tại `0.0 s`, kết thúc đúng duration đã khai báo và phủ toàn bộ khoảng giữa bằng các đoạn thời gian liên tiếp.
+- Mỗi đoạn thời gian nói rõ subject nào chuyển động, camera làm gì, chi tiết nào giữ nguyên và frame cuối chuẩn bị cho cảnh kế tiếp ra sao.
+- Prompt phải nêu aspect ratio, phong cách documentary, continuity/reference, camera/look và negative constraints phù hợp riêng với shot.
+- Không yêu cầu model sinh chữ, nhãn khoa học, số liệu hoặc sơ đồ kỹ thuật; các thành phần đó do editor dựng 2D/3D.
+
+### Template Gemini Omni video
+
+~~~text
+Create one continuous [DURATION]-second, 16:9 [STYLE] shot of [SUBJECT] in [ENVIRONMENT].
+[CONTINUITY OR REFERENCE LOCK].
+
+TIMED ACTION
+0.0–[A] s: [opening composition, subject state, camera state].
+[A]–[B] s: [one visible action or controlled change].
+[B]–[DURATION] s: [resolve the action and leave a clean exit frame].
+
+CAMERA / LOOK: [shot size, lens/perspective, movement, light, color, realism].
+NEGATIVE CONSTRAINTS: [shot-specific failures, unwanted objects, morphing, text, logos].
+~~~
+
+Với Veo, ảnh reference và prompt video có nhiệm vụ khác nhau:
 
 - Ảnh reference khóa appearance và composition.
 - Prompt video chủ yếu mô tả chuyển động, camera và thay đổi theo thời gian.
@@ -451,7 +482,9 @@ Không dùng “negative prompt soup”. Chỉ liệt kê lỗi có khả năng 
 
 ## 12. Provenance và disclosure
 
-Mỗi asset AI cần một hàng provenance trong asset registry của **Pormpt.md**; không tạo prompt/provenance log Markdown riêng:
+`Pormpt.md` chỉ giữ Asset ID, nguồn factual/reference và prompt dùng để tạo asset ngay tại hàng timeline tương ứng. Không chèn bảng provenance, trạng thái sản xuất, quyền hoặc release gate vào tài liệu này. Nếu project cần lưu provenance vận hành, lưu cùng metadata/media artifact ở cấp project mà không làm loãng bản hướng dẫn edit.
+
+Metadata nên lưu cho asset AI gồm:
 
 | Trường | Ví dụ |
 |---|---|

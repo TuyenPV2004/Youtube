@@ -1,6 +1,6 @@
 # PHONG CÁCH VIẾT VĂN CHO KỊCH BẢN DOCUMENTARY / VIDEO ESSAY
 
-> **Version:** 1.1.0  
+> **Version:** 1.2.0  
 > **Last verified (editorial consistency):** 2026-08-11  
 > **Status:** Working narration style guide.
 
@@ -1295,3 +1295,35 @@ Tóm lại:
 Và quan trọng nhất:
 
 **The viewer should always have a reason to hear the next sentence.**
+
+---
+
+# 51. VĂN VIẾT KHÁC VĂN NÓI
+
+Kịch bản có thể rõ khi đọc nhưng vẫn khó hiểu khi nghe. Người đọc có thể dừng, nhìn lại đầu câu và phân tích cấu trúc. Người nghe voiceover không có lợi thế đó.
+
+Vì vậy, một câu đúng về ngữ pháp chưa chắc là một câu thoại tốt.
+
+## Chuẩn bắt buộc
+
+- Một câu voiceover ưu tiên một ý chính.
+- Tách câu chứa nhiều điều kiện, nhiều lớp nguyên nhân hoặc ba danh từ trừu tượng trở lên.
+- Ưu tiên động từ trực tiếp hơn danh từ hóa.
+- Không sửa câu dài chỉ bằng cách giảm tốc độ đọc.
+- Dùng line break và pause để làm rõ logic, không dùng để cứu một cấu trúc câu quá tải.
+- Với thuật ngữ mới, dùng thứ tự: **plain-language idea → visual model → technical term → precise boundary**.
+- Sau một signature line, dùng câu trực tiếp để giải thích; không xếp nhiều câu poetic liên tiếp.
+
+## Listen-once test
+
+Trước khi khóa voice, đọc thành tiếng mà không nhìn lại câu trước. Với mỗi câu, kiểm tra:
+
+1. Người nghe có thể nhắc lại ý chính bằng một câu đơn giản không?
+2. Đại từ có đối tượng rõ không?
+3. Có phải giữ quá nhiều điều kiện trong trí nhớ mới hiểu động từ chính không?
+4. Thuật ngữ đã có mental model trước khi được gọi tên chưa?
+5. Câu này nghe như một người đang nói, hay như một đoạn báo cáo được đọc lên?
+
+Nếu thất bại, rewrite trước khi tạo voice.
+
+> **Văn viết cho phép người đọc quay lại. Văn nói phải rõ ngay lần đầu nghe.**

@@ -1,0 +1,120 @@
+{
+  "file": "Narration_af_heart_master.wav",
+  "generated_at_utc": "2026-08-11T18:04:40.081953+00:00",
+  "source_script": "Video\\Why Lightning Strikes the Same Place Again and Again\\eng\\Kich_Ban.md",
+  "source_script_sha256_at_generation": "0fdcf4de3ab1eef6c1f1e9f1743b5fbc76314e4cd095210c737f316e6c999790",
+  "source_voiceover_sha256": "dd67fd1eed8d9a8f504a9ca05459eaeb92b70bfc35979bd209e9c23841a84b12",
+  "model": "hexgrad/Kokoro-82M v1.0",
+  "kokoro_package": "0.9.4",
+  "voice": "af_heart",
+  "lang_code": "a",
+  "speed": 0.86,
+  "sample_rate_hz": 24000,
+  "channels": 1,
+  "subtype": "PCM_24",
+  "section_pause_seconds": 0.65,
+  "word_count": 986,
+  "duration_seconds": 381.65,
+  "effective_wpm": 155.01,
+  "chunks": [
+    {
+      "index": 1,
+      "script_timeline": "00:00–00:35",
+      "actual_start_seconds": 0.0,
+      "actual_end_seconds": 30.95,
+      "duration_seconds": 30.95,
+      "word_count": 84,
+      "text_sha256": "968f3dd7e23045f71d9858a891a17e12e3a15276b2c873e6a5856198885d6550"
+    },
+    {
+      "index": 2,
+      "script_timeline": "00:35–01:10",
+      "actual_start_seconds": 31.6,
+      "actual_end_seconds": 61.1,
+      "duration_seconds": 29.5,
+      "word_count": 88,
+      "text_sha256": "8335d97b179af013c4b9ed36c9e1afbaf3b93695b1ef28bce2b6dd9619939a11"
+    },
+    {
+      "index": 3,
+      "script_timeline": "01:10–02:00",
+      "actual_start_seconds": 61.75,
+      "actual_end_seconds": 102.65,
+      "duration_seconds": 40.9,
+      "word_count": 96,
+      "text_sha256": "fe05caf7948af5d607cad1138aebf7a197dfa4bf3d49e94db384cf9e62116374"
+    },
+    {
+      "index": 4,
+      "script_timeline": "02:00–02:55",
+      "actual_start_seconds": 103.3,
+      "actual_end_seconds": 142.075,
+      "duration_seconds": 38.775,
+      "word_count": 106,
+      "text_sha256": "6720ed1ce35224c6d468ff9e4c741d7050dadca9c4abbebec29bccb5bfb9dc47"
+    },
+    {
+      "index": 5,
+      "script_timeline": "02:55–03:50",
+      "actual_start_seconds": 142.725,
+      "actual_end_seconds": 183.3,
+      "duration_seconds": 40.575,
+      "word_count": 105,
+      "text_sha256": "0676f3bea91ddcbb3c8029b10902f2f16f4ee95a9792cf769706dc2eb02a1983"
+    },
+    {
+      "index": 6,
+      "script_timeline": "03:50–04:40",
+      "actual_start_seconds": 183.95,
+      "actual_end_seconds": 220.875,
+      "duration_seconds": 36.925,
+      "word_count": 99,
+      "text_sha256": "23ee8a3216e3c0606832381e05ab366da0252f2a5139217567cf5d2ec063dae6"
+    },
+    {
+      "index": 7,
+      "script_timeline": "04:40–05:30",
+      "actual_start_seconds": 221.525,
+      "actual_end_seconds": 256.55,
+      "duration_seconds": 35.025,
+      "word_count": 96,
+      "text_sha256": "179eee0a7c2f8901a24fc44e5c8484933def183156e55d466f74452e08ba4850"
+    },
+    {
+      "index": 8,
+      "script_timeline": "05:30–06:20",
+      "actual_start_seconds": 257.2,
+      "actual_end_seconds": 294.675,
+      "duration_seconds": 37.475,
+      "word_count": 87,
+      "text_sha256": "84b99e5c42341123894fd9f66ea9b2a98ca768dc2c68802ff1ce5dedb9d0f60a"
+    },
+    {
+      "index": 9,
+      "script_timeline": "06:20–07:10",
+      "actual_start_seconds": 295.325,
+      "actual_end_seconds": 329.525,
+      "duration_seconds": 34.2,
+      "word_count": 91,
+      "text_sha256": "13ec600ab826fab7b9528ce41e66036e8b2cb953e684c4f99bf52c7f879c4377"
+    },
+    {
+      "index": 10,
+      "script_timeline": "07:10–07:40",
+      "actual_start_seconds": 330.175,
+      "actual_end_seconds": 353.3,
+      "duration_seconds": 23.125,
+      "word_count": 59,
+      "text_sha256": "0e16fdb0be2ac00a7e4466b9f76c81193a4f9c417c07b4023a8aa87e79a9073b"
+    },
+    {
+      "index": 11,
+      "script_timeline": "07:40–08:15",
+      "actual_start_seconds": 353.95,
+      "actual_end_seconds": 381.65,
+      "duration_seconds": 27.7,
+      "word_count": 75,
+      "text_sha256": "133bd2780122121561341416b213821c601bc5ea6b6a9d8133fb61640d839995"
+    }
+  ]
+}

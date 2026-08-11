@@ -1,6 +1,6 @@
 # CHECKLIST KIỂM TRA KỊCH BẢN DOCUMENTARY / VIDEO ESSAY
 
-> Version: 2.1
+> Version: 2.2
 > Last verified: 2026-08-11  
 > Phạm vi: curiosity documentary tiếng Anh hướng đến khán giả quốc tế
 > Cách dùng: đánh dấu **PASS / FAIL / N/A** và ghi bằng chứng kiểm tra. Không được chọn N/A nếu không nêu lý do.
@@ -142,7 +142,7 @@ Kết quả checklist không tạo thành file riêng: story/fact/voice sign-off
 - [ ] Câu dài đã được tách theo ý nghĩa, không tách cơ học giữa chủ ngữ và vị ngữ.
 - [ ] Pause được tạo bằng dấu câu, xuống đoạn hoặc audio tag phù hợp với model; không lạm dụng SSML.
 - [ ] Đoạn văn được chia thành chunk theo section để dễ tạo lại và giữ nhịp.
-- [ ] Target pace đã ghi rõ; mặc định thử nghiệm khoảng 145–165 từ/phút cho documentary tiếng Anh.
+- [ ] Target pace đã ghi rõ; với Kokoro bắt đầu từ `speed=0.86`, sau đó quyết định bằng listening QA thay vì ép theo duration/WPM.
 - [ ] Cảm xúc được mô tả cụ thể, kiềm chế và phù hợp bằng chứng.
 - [ ] Voice có quyền sử dụng và không giả mạo người thật.
 - [ ] Đã nghe thử trên loa và tai nghe; không chỉ nhìn waveform.
@@ -212,7 +212,7 @@ Kết quả checklist không tạo thành file riêng: story/fact/voice sign-off
 - [ ] Mọi con số quan trọng đều dễ nghe và có điểm neo so sánh.
 - [ ] Không có citation đọc thành lời ngoài ý muốn.
 - [ ] Không có instruction nội bộ lọt vào cột Voiceover của `Kich_Ban.md`.
-- [ ] Tổng word count phù hợp target duration sau khi tính pause.
+- [ ] Runtime là kết quả tự nhiên của clean VO và nhịp đọc đã duyệt; không kéo chậm voice, thêm filler, lặp ý hoặc viết dài chỉ để đạt 8 phút hay một mốc cố định.
 - [ ] Cắt mọi câu không tạo meaning, evidence, tension hoặc transition.
 - [ ] Một người không tham gia research đã nghe/đọc và diễn đạt đúng luận điểm chính.
 

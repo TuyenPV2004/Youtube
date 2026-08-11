@@ -1,6 +1,6 @@
 # ĐỊNH HƯỚNG NỘI DUNG VÀ PHONG CÁCH SẢN XUẤT VIDEO
 
-> **Version:** 2.0.0
+> **Version:** 2.1.0
 > **Last verified (editorial consistency):** 2026-08-11
 > **Status:** Working channel strategy; mọi giả thuyết về audience và tăng trưởng phải được kiểm chứng bằng dữ liệu của chính kênh.
 
@@ -279,11 +279,11 @@ Giải thích khoa học chỉ xuất hiện khi nó giúp giải quyết câu h
 
 Trọng tâm là long-form YouTube.
 
-- Pilot: **8–14 phút/video**.
+- Pilot: thường là long-form khoảng **6–14 phút/video**, nhưng không có mốc tối thiểu 8 phút bắt buộc.
 - Khi workflow và retention đã ổn định: **12–20 phút/video**.
 - Extreme Earth hoặc investigation lớn: chỉ kéo dài hơn khi câu chuyện thật sự cần.
 
-Không có độ dài tối ưu chung. Cắt mọi đoạn không tạo thêm mystery, meaning, evidence, mechanism hoặc emotional payoff.
+Không có độ dài tối ưu chung. Runtime phải phát sinh từ câu chuyện và nhịp nghe tự nhiên. Không kéo chậm voice, thêm filler, lặp ý hoặc mở rộng script chỉ để đạt một mốc phút. Cắt mọi đoạn không tạo thêm mystery, meaning, evidence, mechanism hoặc emotional payoff.
 
 Shorts chỉ là sản phẩm phụ để:
 

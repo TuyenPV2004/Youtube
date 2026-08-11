@@ -1,7 +1,7 @@
 ---
 title: "Visual Storytelling Playbook"
-version: "1.3.0"
-last_updated: "2026-08-11"
+version: "1.6.0"
+last_updated: "2026-08-12"
 scope: "Mọi video documentary, video essay, short test và prompt AI trong repository"
 status: "Mandatory production guide"
 ---
@@ -16,7 +16,7 @@ Nguyên tắc trung tâm:
 
 > Không bắt đầu bằng câu hỏi “cần tạo bao nhiêu clip AI?”. Hãy bắt đầu bằng “câu chuyện cần bao nhiêu visual beat khác nhau?”.
 
-Mọi quyết định scene/voice được ghi vào **Kich_Ban.md**; master media map, prompt AI, nguồn footage thật, chuyển cảnh và quyền asset được ghi vào **Pormpt.md**. Không tạo shot-list, prompt-log hoặc continuity-sheet Markdown riêng.
+Mọi quyết định scene/voice được ghi vào **Kich_Ban.md**. **Pormpt.md** là bản hướng dẫn edit theo timeline: nó ghép footage thật, video AI, đồ họa 2D/3D, composite và editorial text theo đúng radio edit. Hồ sơ quyền asset và release gate không đặt trong tài liệu này.
 
 ## 2. Khung kể chuyện dùng chung
 
@@ -268,7 +268,26 @@ Không bắt model tạo video sinh chữ, phương trình hoặc sơ đồ kỹ
 
 ### Gate cho footage thật do người dùng tự tìm
 
-Mỗi asset REAL trong `Pormpt.md` phải mô tả đủ chi tiết để người dùng hình dung được clip trước khi tìm: chức năng kể chuyện; subject/environment; hành động quan sát được; bố cục; camera; ánh sáng và màu; tỷ lệ/độ phân giải; thời lượng nguồn và thời lượng dùng; frame vào/ra; continuity; giới hạn factual; điều kiện loại và từ khóa tìm. Link chỉ là candidate và không thay thế mô tả. Clip có license hợp lệ nhưng không khớp brief vẫn phải thay.
+Mỗi asset REAL trong `Pormpt.md` phải mô tả đủ chi tiết để người dựng hình dung được clip trước khi tìm: chức năng kể chuyện; subject/environment; hành động quan sát được; bố cục; camera hoặc chuyển động cần thiết; frame vào/ra; continuity; giới hạn factual; điều kiện loại và từ khóa tìm. Link chỉ là candidate và không thay thế mô tả. Với nhóm asset quan trọng, tham khảo nhiều nguồn trực tiếp, mục tiêu tối thiểu ba ứng viên khi thực tế cho phép. Clip có license hợp lệ nhưng không khớp brief vẫn phải thay.
+
+### Cấu trúc bắt buộc của `Pormpt.md`
+
+Timeline edit map dùng đúng sáu cột:
+
+| Timeline | Scene / Sequence | Asset | Nội dung chi tiết | Nguồn tham khảo | Prompt Gemini Omni |
+|---|---|---|---|---|---|
+
+- Timeline phải liên tục và bám radio edit trong `Kich_Ban.md`; không kéo lời thoại để phục vụ độ dài clip.
+- Một hàng có thể là Scene hoặc Sequence. Sequence được dùng khi một ý cần nhiều shot, overlay hoặc thay đổi quy mô để hiểu rõ.
+- Asset được chọn theo chức năng kể chuyện, không theo quota: real A-roll, real B-roll, AI video, 2D, 3D, composite hoặc editorial text.
+- Cột nội dung phải nói rõ người xem thấy gì, hành động thị giác nào diễn ra, thông tin mới là gì và cảnh nối vào/ra ra sao.
+- Cột nguồn tham khảo chứa nhiều link trực tiếp và từ khóa thay thế khi phù hợp; link là ứng viên, không phải xác nhận quyền.
+- Mỗi hàng có prompt video Gemini Omni đầy đủ ngay trong ô cuối, kể cả khi Asset chính là REAL hoặc GRAPHIC. Prompt ở hàng đó là phương án bổ sung/thay thế hoặc motion reference và không thay đổi loại Asset chính.
+- Cột cuối không chứa hướng dẫn edit, transition, overlay, compositing hoặc color grading.
+- `eng/Pormpt.md` dùng prompt tiếng Anh; `vie/Pormpt.md` dùng prompt tiếng Việt tự nhiên và đầy đủ.
+- Hai bản phải khớp Asset ID, duration, timecode, hành động, camera và negative constraints; không để prompt tiếng Anh trong bản VIE và không dẫn người dùng sang bản ENG.
+- Nếu một hàng cần nhiều clip AI, đặt các prompt con có Asset ID riêng trong cùng ô; mỗi clip dài 4–10 giây và có timed action độc lập.
+- Không có cột `Status/Trạng thái`; không thêm Motion graphic/factual guardrail, rights/release gate, final gate, Production hoặc Public release vào `Pormpt.md`.
 
 ## 11. Prompt gate bắt buộc
 
@@ -326,6 +345,8 @@ Storyboard là `HOLD` nếu:
 - Nhiều cảnh nhưng thực chất chỉ có một ý thị giác.
 - Dùng continuity để biện minh cho sự lặp lại.
 - Cố dùng hết clip AI 8 giây trên timeline.
+- Mặc định mọi video AI là 10 giây chỉ vì model cho phép tối đa 10 giây.
+- Viết timed action không phủ hết duration hoặc nhồi nhiều lần đổi cảnh vào một clip.
 - Một prompt chứa quá nhiều hành động và nhiều lần đổi cảnh.
 - Chỉ zoom vào chi tiết thay vì mở rộng cơ chế hoặc hệ quả.
 - Dùng hiệu ứng chuyển cảnh để tạo cảm giác nhịp nhanh giả.
@@ -352,9 +373,10 @@ Storyboard là `HOLD` nếu:
 9. Kiểm tra diversity gate.
 10. Thiết kế entry/exit transition và circular return.
 11. Chỉ sau đó mới viết prompt cho những beat thật sự cần AI.
-12. Tạo một kết quả thử; review trước khi dùng thêm credit.
-13. Cắt clip theo narration trong editor; không phục vụ timeline cho độ dài mặc định của model.
-14. Sau rough cut, kiểm tra lại: mỗi 20–30 giây người xem đã nhận được answer, reveal, scale change hoặc deeper question chưa.
+12. Với Gemini Omni, chọn duration linh hoạt 4–10 giây theo một hành động chính; 10 giây là trần, không phải mặc định. Timed action phải phủ từ giây đầu đến giây cuối.
+13. Tạo một kết quả thử; review trước khi dùng thêm credit.
+14. Cắt clip theo narration trong editor; không phục vụ timeline cho độ dài mặc định của model.
+15. Sau rough cut, kiểm tra lại: mỗi 20–30 giây người xem đã nhận được answer, reveal, scale change hoặc deeper question chưa.
 
 ## 15. Nguồn bài học và giới hạn
 

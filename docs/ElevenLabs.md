@@ -1,6 +1,6 @@
 ---
 title: "Quy trình ElevenLabs cho narration documentary tiếng Anh"
-version: "1.1.0"
+version: "1.2.0"
 last_verified: "2026-08-11"
 scope: "Voice selection, model, script preprocessing, pronunciation, pauses, QA và consent"
 status: "Production guide"
@@ -182,6 +182,16 @@ Nguồn: [ElevenLabs — Prompting Eleven v3](https://elevenlabs.io/docs/best-pr
 - Không tăng tốc để ép script dài vào target duration; cắt câu thừa trước.
 - Đo WPM trên audio hoàn chỉnh có tính các pause có chủ đích: tổng số từ chia cho số phút narration.
 - Ghi WPM thực tế vào mục voice note của `Kich_Ban.md`; không suy ra pace chỉ từ giá trị Speed.
+
+### 5.4. Mặc định Kokoro và nguyên tắc runtime
+
+- Với Kokoro, baseline đã được người dùng duyệt là `speed=0.86`.
+- `0.86` là điểm xuất phát về trải nghiệm nghe, không phải công thức để đạt một WPM hoặc thời lượng cố định.
+- Không hạ speed để kéo narration đến 8 phút hoặc mốc thời lượng khác.
+- Không thêm câu, lặp ý hoặc viết dài hơn chỉ để giữ `speed=0.86` mà vẫn đạt một số phút định trước.
+- Runtime thực tế được đo sau khi render. Timeline dựng được cập nhật theo audio đã duyệt.
+- Chỉ thay đổi speed khi listening QA cho thấy giọng cụ thể quá nhanh hoặc quá chậm; ghi lý do và giá trị thực tế trong `Kich_Ban.md`.
+- Chỉ mở rộng kịch bản khi thiếu story, evidence, mechanism, boundary hoặc payoff, không phải vì thiếu phút.
 
 ## 6. Script preprocessing
 

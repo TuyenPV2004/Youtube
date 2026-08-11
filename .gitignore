@@ -1,1 +1,18 @@
-/Video/
+
+# Local caches and generated Python environments
+/.cache/
+/.venv*/
+/.tools/python/
+__pycache__/
+*.py[cod]
+
+# Logs, temporary files, and local installers
+*.log
+*.tmp
+*.temp
+*.msi
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

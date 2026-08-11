@@ -1,6 +1,6 @@
 # QUY TRÌNH SẢN XUẤT DOCUMENTARY / VIDEO ESSAY TỪ ĐẦU ĐẾN CUỐI
 
-> Version: 2.1
+> Version: 2.2
 > Last verified: 2026-08-11  
 > Phạm vi: curiosity documentary tiếng Anh hướng đến khán giả quốc tế, kết hợp tư liệu thật, tài liệu, ElevenLabs và hình tổng hợp bằng Google Flow
 > Nguyên tắc: **Evidence before narrative · Rights before edit · Human judgment before publish**
@@ -480,13 +480,15 @@ Chỉ tạo Clean VO khi blocker bằng 0.
 
 ### Tạo và QA
 
-1. Tạo một đoạn calibration 45–90 giây.
-2. Chốt voice, pace và emotional restraint.
-3. Tạo theo chunk, không tạo lại toàn bài chỉ vì một lỗi.
-4. Nghe bằng tai nghe và loa.
-5. Sửa text trước khi đẩy setting quá mức.
-6. Lưu take được chọn, text đầu vào và thông số.
-7. Ghép loudness/room tone nhất quán nhưng không làm giọng mất tự nhiên.
+1. Với Kokoro, bắt đầu bằng `speed=0.86`; không điều chỉnh speed để ép narration vào một mốc thời lượng.
+2. Chỉ tạo calibration 45–90 giây khi đang chọn voice mới. Khi voice và baseline đã khóa, có thể render toàn bài trực tiếp.
+3. Chốt voice, pace và emotional restraint bằng listening QA; trải nghiệm nghe quan trọng hơn việc đạt số phút dự kiến.
+4. Tạo theo chunk, không tạo lại toàn bài chỉ vì một lỗi.
+5. Nghe bằng tai nghe và loa.
+6. Sửa text khi câu nói thật sự khó nghe hoặc sai; không thêm nội dung, lặp ý hay kéo dài script để đạt 8 phút.
+7. Lưu take được chọn, text đầu vào và thông số.
+8. Đo runtime thực tế rồi cập nhật timeline dựng theo audio đã duyệt; không bẻ tốc độ audio theo timeline nháp.
+9. Ghép loudness/room tone nhất quán nhưng không làm giọng mất tự nhiên.
 
 Toàn bộ quy chuẩn nằm trong [ElevenLabs.md](ElevenLabs.md).
 

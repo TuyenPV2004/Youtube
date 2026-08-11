@@ -1,7 +1,7 @@
 # QUY TẮC BẮT BUỘC CHO AI TRONG DỰ ÁN YOUTUBE
 
-> Version: 2.1.0
-> Last updated: 2026-08-11  
+> Version: 2.6.0
+> Last updated: 2026-08-12  
 > Phạm vi: toàn bộ công việc nghiên cứu, viết kịch bản, tạo voice, tạo visual, dựng, xuất bản và phân tích video trong repository này.
 
 Các quy tắc trong file này áp dụng cho mọi AI agent làm việc trong dự án. Nếu có xung đột, phải tuân theo system/developer/user instruction có mức ưu tiên cao hơn và thông báo rõ phần không thể áp dụng.
@@ -104,8 +104,8 @@ AI không phải citation. Mọi nguồn/URL do AI đề xuất phải được 
 - Nguồn đáng tin cậy về thông tin không tự tạo quyền sử dụng ảnh/video.
 - Tư liệu công khai trên Google, YouTube, website chính phủ, archive hoặc mạng xã hội không mặc nhiên là public domain.
 - Fair use không tự động phát sinh vì đã thêm voice-over, crop, zoom, color grade hoặc dùng clip ngắn.
-- Mỗi asset phải có một hàng quyền sử dụng trong asset registry của **Pormpt.md** và trạng thái APPROVED trước khi vào timeline cuối.
-- Asset PENDING, UNKNOWN hoặc BLOCKED không được dùng.
+- Quyền sử dụng vẫn phải được xác minh trước khi đưa asset vào bản dựng cuối, nhưng không biến **Pormpt.md** thành Rights Ledger hoặc bảng trạng thái.
+- Link trong **Pormpt.md** là nguồn tham khảo/ứng viên; việc xuất hiện trong timeline không đồng nghĩa asset đã được cấp quyền sử dụng.
 - Hình tạo bằng AI phải gắn **[VISUAL-AI]** và **[AI-NOT-EVIDENCE]**.
 - Hình AI không được dùng làm bằng chứng cho người, địa điểm hoặc sự kiện có thật.
 - Nội dung altered/synthetic có vẻ chân thực phải được đánh giá disclosure theo chính sách hiện hành trong **docs/Google.md**.
@@ -148,8 +148,8 @@ Video/<TITLE_VIDEO>/
 Giữ chính xác tên **Pormpt.md** theo quy ước của người dùng. Không tự đổi thành `Prompt.md`.
 
 - **eng/** và **vie/** mỗi thư mục phải chứa đúng hai file `Kich_Ban.md` và `Pormpt.md`; không đặt thêm file hoặc thư mục con nào trong đó nếu người dùng chưa yêu cầu rõ.
-- File media, project dựng, caption sau picture lock và bằng chứng quyền dạng ảnh/PDF/receipt phải nằm ở cấp project, bên ngoài **eng/** và **vie/**, ví dụ `Audio/`, `Video/`, `Edit/` hoặc `Rights_Proof/`; chúng phải được dẫn chiếu từ **Pormpt.md**.
-- Research, checklist và log vẫn phải làm, nhưng được hợp nhất thành section/table trong hai tài liệu chính thay vì sinh file riêng.
+- File media, project dựng, caption sau picture lock và bằng chứng quyền dạng ảnh/PDF/receipt phải nằm ở cấp project, bên ngoài **eng/** và **vie/**, ví dụ `Audio/`, `Video/`, `Edit/` hoặc `Rights_Proof/`.
+- Research, checklist và log vẫn phải làm ở nơi phù hợp, nhưng không chèn các bảng trạng thái, release gate hoặc production gate vào **Pormpt.md**.
 - File cũ chỉ được archive hoặc xóa sau khi đã hợp nhất, kiểm tra đủ dữ liệu và có chỉ thị rõ của người dùng.
 
 ### 7.3. Nội dung bắt buộc của hai tài liệu
@@ -163,22 +163,28 @@ Giữ chính xác tên **Pormpt.md** theo quy ước của người dùng. Khôn
 - bảng evidence/source gọn hợp nhất Source Table và Claim Ledger;
 - pronunciation/voice note cần thiết và quyết định GO/HOLD/REJECT.
 
-**Pormpt.md** là nguồn chuẩn duy nhất cho hình ảnh và sản xuất, phải có:
+**Pormpt.md** là bản hướng dẫn edit bám sát radio edit đã duyệt trong **Kich_Ban.md**, phải có:
 
-- master media map ghi timestamp, asset ID, loại **REAL / AI / MOTION GRAPHIC / DOCUMENT / EDITORIAL TEXT**, thời lượng dùng cuối và mục đích;
-- vị trí chính xác của video AI và footage thật; link trực tiếp đến trang asset gốc đối với footage thật;
-- với mỗi footage thật, ngoài link ứng viên phải có brief tự tìm chi tiết: chức năng kể chuyện; subject/environment bắt buộc; hành động mong muốn; bố cục; camera; ánh sáng/màu; độ phân giải/tỷ lệ; thời lượng nguồn và thời lượng dùng cuối; frame vào/ra; continuity với cảnh liền kề; giới hạn factual; tiêu chí loại; và từ khóa tìm kiếm;
-- link footage chỉ là ứng viên. Nếu hình thật không đáp ứng brief thì phải thay, không được giữ chỉ vì title/keyword có vẻ đúng;
-- prompt AI đầy đủ có timed action, continuity, factual guardrail, negative constraints và frame ra/vào;
-- chuyển cảnh vào/ra cho từng beat;
-- asset registry hợp nhất Rights Ledger, prompt/provenance log, cue sheet và production status;
-- disclosure, visual QA và quyết định GO/HOLD/REJECT.
+- đúng sáu cột: **Timeline · Scene / Sequence · Asset · Nội dung chi tiết · Nguồn tham khảo · Prompt Gemini Omni**;
+- timeline liên tục theo lời thoại; mỗi hàng có thể là một Scene hoặc một Sequence gồm nhiều shot;
+- chọn asset theo khả năng truyền đạt tốt nhất: **REAL A-ROLL / REAL B-ROLL / AI VIDEO / 2D GRAPHIC / 3D GRAPHIC / COMPOSITE / EDITORIAL TEXT**; không ép mọi beat thành video AI;
+- cột nội dung mô tả đủ chi tiết để dựng: chức năng kể chuyện, chủ thể/môi trường, hành động thị giác, bố cục hoặc cơ chế cần thấy, điểm vào/ra và quan hệ với cảnh liền kề;
+- footage thật có nhiều nguồn tham khảo trực tiếp khi thực tế cho phép, mục tiêu tối thiểu ba ứng viên cho nhóm asset quan trọng, kèm từ khóa thay thế khi cần; link chỉ là ứng viên và phải thay nếu không khớp brief;
+- mỗi hàng timeline đều có ít nhất một prompt video hoàn chỉnh, copy-ready cho Gemini Omni, nêu duration, aspect ratio, shot/camera, subject, timed action, look, continuity và negative constraints;
+- hàng có asset chính là REAL hoặc GRAPHIC vẫn giữ đúng loại asset; prompt Gemini Omni ở đó là phương án bổ sung, thay thế hoặc motion reference, không phải lý do đổi mọi asset thành AI;
+- cột `Prompt Gemini Omni` chỉ chứa prompt tạo video; không chứa hướng dẫn cắt dựng, transition, overlay, compositing, color grading hoặc chỉ dẫn cho editor;
+- video AI dài linh hoạt **4–10 giây** theo lượng hành động cần thể hiện; **10 giây là giới hạn tối đa, không phải thời lượng mặc định**; timed action phải phủ toàn bộ clip, không để khoảng thời gian mơ hồ;
+- nếu một hàng cần nhiều hơn một clip, đặt nhiều prompt con có Asset ID riêng trong cùng ô; mỗi prompt con vẫn dài 4–10 giây và có timed action độc lập;
+- bản **eng/Pormpt.md** phải viết toàn bộ prompt Gemini Omni bằng tiếng Anh;
+- bản **vie/Pormpt.md** phải dịch và viết toàn bộ prompt Gemini Omni bằng tiếng Việt tự nhiên, đầy đủ; không giữ prompt tiếng Anh và không ghi “xem bản ENG”;
+- hai bản phải khớp về ý nghĩa, Asset ID, duration, timecode, hành động, camera và negative constraints; không dịch máy móc làm sai thuật ngữ hoặc ý nghĩa hình ảnh;
+- không có cột **Trạng thái/Status** và không thêm các section riêng: **Motion graphic và factual guardrail**, **Quyền và release gate**, **Final gate**, **Production** hoặc **Public release**.
 
 ## 8. Đầu ra research bắt buộc trong từng project
 
 Trước khi khóa lời thoại, **Kich_Ban.md** phải có bảng evidence/source bao gồm nguồn, provenance, freshness, claim, epistemic type, confidence, counterpoint và trạng thái. Đây là Source Table + Claim Ledger về mặt dữ liệu, không phải hai file riêng.
 
-Trước khi khóa media map, **Pormpt.md** phải có asset registry bao gồm asset, owner, source URL, license, commercial/derivative rights, attribution, proof và trạng thái. Đây là Rights Ledger về mặt dữ liệu, không phải file riêng.
+Trước khi khóa timeline edit, **Pormpt.md** phải được đối chiếu với radio edit, kiểm tra timeline liên tục, nguồn tham khảo mở được, loại asset phù hợp và mọi prompt AI phủ đủ thời lượng 4–10 giây. Việc xác minh license/quyền vẫn bắt buộc trước khi dùng asset, nhưng không được trình bày thành registry hoặc status gate trong **Pormpt.md**.
 
 Trước khi tạo voice:
 
@@ -189,11 +195,18 @@ Trước khi tạo voice:
 
 Trước khi publish:
 
-- asset registry trong **Pormpt.md** không còn asset chưa APPROVED trên timeline;
-- mục final sign-off trong hai file là GO;
+- mọi asset thật dùng trong bản dựng đã được xác minh quyền ở hồ sơ sản xuất phù hợp;
 - title/thumbnail không overclaim;
 - altered/synthetic disclosure đã được quyết định;
 - Content ID/copyright checks đã được xử lý có căn cứ.
+
+## 8.1. Nhịp giọng và thời lượng video
+
+- Với Kokoro, dùng `speed=0.86` làm mặc định đã được người dùng duyệt. Chỉ đổi khi listening QA của chính giọng/tập đó cho thấy cần thiết, không đổi để ép thời lượng.
+- Thời lượng video là kết quả của kịch bản đã duyệt, nhịp nói tự nhiên, khoảng nghỉ có mục đích và nhu cầu hình ảnh; không có mốc tối thiểu 8 phút bắt buộc.
+- Không kéo chậm voice, thêm câu đệm, lặp ý hoặc mở rộng kịch bản chỉ để đạt một số phút định trước.
+- Chỉ thêm nội dung khi story, evidence, mechanism, boundary hoặc payoff thực sự còn thiếu. Nếu lời hứa đã được thực hiện ở thời lượng ngắn hơn, giữ video ngắn hơn.
+- `Target duration` trong `Kich_Ban.md` là ước lượng biên tập, không phải pass/fail gate. Sau khi tạo voice, ghi runtime thực tế và cập nhật timeline theo audio thay vì bẻ audio theo timeline nháp.
 
 ## 9. Cách trích dẫn trong câu trả lời và tài liệu
 
@@ -238,8 +251,8 @@ Trước khi báo hoàn tất, AI phải xác nhận:
 - [ ] Mọi factual claim có nguồn hoặc được ghi UNVERIFIED và không đưa vào output cuối.
 - [ ] Không có URL, số liệu hoặc trích dẫn do AI bịa.
 - [ ] Fact, inference, forecast và opinion được phân biệt.
-- [ ] Bảng evidence/source trong **Kich_Ban.md** và asset registry trong **Pormpt.md** được cập nhật khi có thay đổi.
-- [ ] Không có asset chưa APPROVED trong đầu ra cuối.
+- [ ] Bảng evidence/source trong **Kich_Ban.md** và timeline edit sáu cột trong **Pormpt.md** được cập nhật khi có thay đổi.
+- [ ] Quyền sử dụng của asset thật trong bản dựng cuối đã được xác minh ngoài timeline edit.
 - [ ] Kịch bản, voice, visual và policy checklist phù hợp các tài liệu chuyên trách.
 - [ ] Đã báo rõ những phần chưa xác minh và rủi ro còn lại.
 - [ ] Không tự thao tác tài khoản/dịch vụ bên ngoài; mọi bước bên ngoài đã được handoff và hướng dẫn trực tiếp cho người dùng.
@@ -268,3 +281,23 @@ Khi quy trình đến một bước bắt buộc phải thực hiện bên ngoà
 6. Chỉ cập nhật trạng thái PASS/APPROVED khi có bằng chứng phù hợp do người dùng cung cấp hoặc artifact kết quả đã được đưa vào project để kiểm tra.
 
 Nếu người dùng muốn AI trực tiếp thực hiện một ngoại lệ trong tương lai, người dùng phải đưa ra chỉ thị mới, cụ thể cho đúng dịch vụ, đúng thao tác và đúng phạm vi. Không được suy rộng ngoại lệ đó sang bước khác hoặc dịch vụ khác.
+
+## 13. Văn viết khác văn nói
+
+Voiceover trong `Kich_Ban.md` phải được viết để **nghe và hiểu trong một lần**, không phải để người đọc dừng lại phân tích như một bài luận.
+
+Bắt buộc:
+
+- Mỗi câu voiceover ưu tiên một ý chính.
+- Câu có nhiều điều kiện, mệnh đề hoặc danh từ hóa phải được tách thành nhịp nói tự nhiên.
+- Thuật ngữ kỹ thuật đi theo thứ tự: cách hiểu đời thường → hình dung trực quan → tên thuật ngữ → giới hạn chính xác.
+- Không đưa nhiều thuật ngữ mới liên tiếp khi chưa giải thích bằng ngôn ngữ phổ thông hoặc visual.
+- Câu hình tượng và nhân hóa chỉ dùng có chọn lọc; mỗi beat ưu tiên tối đa một signature line để câu đó còn sức nặng.
+- Supporting section không được phát triển thành một central question thứ hai.
+- Bản tiếng Anh phải conversational ngay từ gốc; bản Việt là bản đối chiếu nghĩa và nhịp, không dịch máy móc cấu trúc câu tiếng Anh.
+- Giảm tốc độ đọc không được dùng để che một câu quá phức tạp.
+- Trước khi khóa voice, phải đọc thành tiếng toàn bộ cột Voiceover và sửa mọi câu không hiểu được khi chỉ nghe một lần.
+
+Nguyên tắc chốt:
+
+> **Văn viết cho phép người đọc quay lại. Văn nói phải rõ ngay lần đầu nghe.**
