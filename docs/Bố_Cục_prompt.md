@@ -1,6 +1,6 @@
 ---
 title: "Bố cục prompt hình ảnh photorealistic cho Google AI Pro / Flow"
-version: "1.0.0"
+version: "1.1.0"
 last_verified: "2026-08-11"
 scope: "Google Flow, Nano Banana, Ingredients/References và Veo"
 status: "Production guide"
@@ -451,7 +451,7 @@ Không dùng “negative prompt soup”. Chỉ liệt kê lỗi có khả năng 
 
 ## 12. Provenance và disclosure
 
-Mỗi asset AI cần lưu:
+Mỗi asset AI cần một hàng provenance trong asset registry của **Pormpt.md**; không tạo prompt/provenance log Markdown riêng:
 
 | Trường | Ví dụ |
 |---|---|

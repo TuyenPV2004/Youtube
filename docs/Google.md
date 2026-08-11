@@ -1,7 +1,7 @@
 # HƯỚNG DẪN VẬN HÀNH CHÍNH SÁCH GOOGLE/YOUTUBE
 
 > Dành cho kênh documentary/video essay faceless sử dụng nghiên cứu, tư liệu thật, hình ảnh AI từ Google Flow và giọng đọc ElevenLabs  
-> **Version:** 1.0.0  
+> **Version:** 1.1.0
 > **Last verified:** 2026-08-11  
 > **Phạm vi:** YouTube Partner Program, kiếm tiền quảng cáo, Community Guidelines, nội dung AI, bản quyền, Content ID và AdSense invalid traffic  
 > **Lưu ý:** Đây là hướng dẫn vận hành, không phải tư vấn pháp lý. Chính sách, điều khoản dịch vụ và cách thực thi có thể thay đổi sau ngày xác minh.
@@ -329,9 +329,9 @@ Các lựa chọn chính thức có thể gồm yêu cầu claimant retract, ho�
 
 ---
 
-## 10. Rights ledger bắt buộc cho mọi asset
+## 10. Asset registry về quyền bắt buộc cho mọi asset
 
-Tạo một hàng cho mỗi ảnh, clip, bản đồ, scan, nhạc, sound effect, giọng, font hoặc tài liệu được sử dụng.
+Tạo một hàng cho mỗi ảnh, clip, bản đồ, scan, nhạc, sound effect, giọng, font hoặc tài liệu được sử dụng trong asset registry của **Pormpt.md**. Đây là Rights Ledger về mặt dữ liệu, không phải một file Markdown riêng.
 
 ### 10.1. Trường dữ liệu tối thiểu
 
@@ -356,7 +356,7 @@ Tạo một hàng cho mỗi ảnh, clip, bản đồ, scan, nhạc, sound effect
 | Expiry/review date | Ngày license hoặc subscription hết hiệu lực; ngày cần tái kiểm tra |
 | Decision | Approved, hold, replace hoặc rejected |
 
-Rights ledger là bằng chứng vận hành, không tự tạo ra quyền nếu nguồn hoặc license không hợp lệ.
+Asset registry là bằng chứng vận hành, không tự tạo ra quyền nếu nguồn hoặc license không hợp lệ.
 
 ### 10.2. Creative Commons
 
@@ -410,7 +410,7 @@ Nguồn: [Tips to find safe music](https://support.google.com/youtube/answer/155
 
 ### 11.2. Cue sheet nội bộ
 
-Với mỗi video, lưu cue sheet gồm track title, composer/artist, source, license, thời điểm bắt đầu/kết thúc, attribution, invoice và Content ID procedure. Không lấy nhạc từ một YouTube channel chỉ vì title ghi “no copyright”.
+Với mỗi video, lưu cue sheet ngay trong asset registry của **Pormpt.md**, gồm track title, composer/artist, source, license, thời điểm bắt đầu/kết thúc, attribution, invoice và Content ID procedure. Không lấy nhạc từ một YouTube channel chỉ vì title ghi “no copyright”.
 
 AI-generated music thuộc nhóm YouTube yêu cầu altered/synthetic disclosure. Ngoài disclosure, vẫn phải kiểm tra điều khoản thương mại của công cụ tạo nhạc. Nguồn: [Disclosing use of altered or synthetic content](https://support.google.com/youtube/answer/14328491?hl=en).
 
@@ -428,7 +428,7 @@ Theo tài liệu ElevenLabs tại ngày xác minh:
 
 Nguồn: [ElevenLabs billing and commercial rights](https://elevenlabs.io/docs/overview/administration/billing), [Voice cloning documentation](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning), [Professional Voice Cloning](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/professional-voice-cloning), [Voice Library Addendum](https://elevenlabs.io/vla).
 
-Cho mỗi giọng, lưu plan, invoice, voice ID, loại voice, chủ thể giọng, bằng chứng consent/permission, ngày generation và snapshot/PDF điều khoản. Không đặt tên, metadata hoặc lời dẫn khiến viewer tin voice là một người thật khác.
+Cho mỗi giọng, lưu plan, invoice, voice ID, loại voice, chủ thể giọng, bằng chứng consent/permission, ngày generation và snapshot/PDF điều khoản trong asset registry của **Pormpt.md**. Không đặt tên, metadata hoặc lời dẫn khiến viewer tin voice là một người thật khác.
 
 ### 12.2. Google Flow
 
@@ -482,11 +482,11 @@ Nguồn: [Fake engagement policy](https://support.google.com/youtube/answer/3399
 
 ### 14.2. Rights và media
 
-- [ ] Mọi asset có hàng trong rights ledger.
+- [ ] Mọi asset có hàng trong asset registry của `Pormpt.md`.
 - [ ] License bao phủ commercial YouTube use và modification cần thiết.
 - [ ] Attribution được thêm đúng chuỗi và đúng vị trí.
 - [ ] Public-domain/government status có căn cứ theo jurisdiction.
-- [ ] Music/SFX có cue sheet.
+- [ ] Music/SFX có cue sheet nhúng trong `Pormpt.md`.
 - [ ] Voice có plan, permission và commercial-use proof.
 - [ ] Không dùng Google Images như bằng chứng license.
 

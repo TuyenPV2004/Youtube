@@ -1,6 +1,6 @@
 ---
 title: "Quy trình ElevenLabs cho narration documentary tiếng Anh"
-version: "1.0.0"
+version: "1.1.0"
 last_verified: "2026-08-11"
 scope: "Voice selection, model, script preprocessing, pronunciation, pauses, QA và consent"
 status: "Production guide"
@@ -181,22 +181,22 @@ Nguồn: [ElevenLabs — Prompting Eleven v3](https://elevenlabs.io/docs/best-pr
 - Đoạn kể chuyện hoặc transition đơn giản: có thể thử 155–170 WPM.
 - Không tăng tốc để ép script dài vào target duration; cắt câu thừa trước.
 - Đo WPM trên audio hoàn chỉnh có tính các pause có chủ đích: tổng số từ chia cho số phút narration.
-- Ghi WPM thực tế vào episode log; không suy ra pace chỉ từ giá trị Speed.
+- Ghi WPM thực tế vào mục voice note của `Kich_Ban.md`; không suy ra pace chỉ từ giá trị Speed.
 
 ## 6. Script preprocessing
 
-Text đưa vào ElevenLabs không phải bản script editorial nguyên bản. Nó phải là một **TTS render script** đã chuẩn hóa.
+Text đưa vào ElevenLabs lấy từ cột **Lời thoại / Voiceover** của `Kich_Ban.md`. Cột này phải là bản clean đã chuẩn hóa để đọc; không tạo thêm một file TTS Markdown dễ lệch phiên bản.
 
 ### 6.1. Quy trình
 
 1. Khóa factual script.
-2. Tạo bản TTS riêng.
+2. Khóa cột Voiceover làm bản TTS chuẩn; chỉ copy text này sang dịch vụ khi người dùng thực hiện bước bên ngoài.
 3. Bỏ citation, URL, footnote và chỉ dẫn hình ảnh khỏi text đọc.
 4. Chuyển số, ký hiệu, acronym và đơn vị thành cách đọc mong muốn.
 5. Thêm punctuation, paragraph break và tag theo model.
 6. Chia chunk theo ý nghĩa và scene.
-7. Generate, nghe lại và cập nhật pronunciation ledger.
-8. Không sửa factual wording chỉ để che lỗi phát âm; sửa bản TTS nhưng giữ liên kết với script gốc.
+7. Generate, nghe lại và cập nhật mục pronunciation/voice QA trong `Kich_Ban.md`.
+8. Không sửa factual wording chỉ để che lỗi phát âm; nếu đổi cách đọc, cập nhật ngay cột Voiceover để chỉ còn một bản chuẩn.
 
 ElevenLabs lưu ý số, ngày, tiền tệ, URL, địa chỉ, ký hiệu và abbreviation có thể bị đọc sai; nên chuẩn hóa thành dạng nói rõ ràng: [ElevenLabs — TTS best practices](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices).
 
@@ -252,7 +252,7 @@ Các lần sau, chốt một cách:
 
 Không đổi cách đọc giữa các episode.
 
-### 7.3. Pronunciation ledger
+### 7.3. Mục pronunciation trong Kich_Ban.md
 
 | Original | Spoken form | IPA/alias | Nguồn xác minh | Voice/model | Approved take | Ghi chú |
 |---|---|---|---|---|---|---|
@@ -419,9 +419,9 @@ Thực hành an toàn:
 ## 12. Checklist xuất bản
 
 - [ ] Voice/model/settings đúng episode bible.
-- [ ] TTS render script đã khóa version.
+- [ ] Cột Voiceover trong `Kich_Ban.md` đã khóa version.
 - [ ] Mọi số, acronym, địa danh và tên riêng đã QA.
-- [ ] Pronunciation ledger được cập nhật.
+- [ ] Mục pronunciation trong `Kich_Ban.md` được cập nhật.
 - [ ] Không có từ bị thêm, mất hoặc lặp.
 - [ ] Accent, cadence và emotion nhất quán.
 - [ ] Không có artifact.

@@ -1284,158 +1284,29 @@ Third-party material không phải story.
 
 # 40. OUTPUT FORMAT CỦA AI
 
-Sau research, AI không được chỉ trả về một script.
+Sau research, AI không được chỉ trả về lời thoại, nhưng cũng không được sinh một file riêng cho mỗi gate. Sáu nhóm dữ liệu bắt buộc được hợp nhất vào đúng hai tài liệu Markdown chính của mỗi ngôn ngữ.
 
-Phải trả về 6 deliverables.
+## A. KICH_BAN.MD — NỘI DUNG VÀ EVIDENCE
 
-## A. DISCOVERY VERDICT
+`Kich_Ban.md` phải chứa:
 
-Bao gồm:
+1. **Discovery verdict trong metadata/hướng đi chung:** main answer, strongest evidence, biggest conflict/uncertainty và story angle.
+2. **Evidence & Sources table:** Source ID, title, publisher/author, publication/update/data/access dates khi liên quan, URL, tier, provenance, relevant location, reliability, independence/methodology và status.
+3. **Claim mapping:** mỗi important claim map tới Source/Evidence ID, epistemic type, confidence và review status.
+4. **Script timeline:** đúng năm cột `Thời lượng · Bố cục · Hình ảnh/B-Roll · Lời thoại/Voiceover · SFX/Notes`; cột Voiceover chứa toàn bộ clean narration.
+5. **Human review flags:** claim cần kiểm tra, conflict chưa giải quyết, inference, pronunciation và story/fact sign-off.
 
-- Main answer.
-- Strongest evidence.
-- Biggest conflict.
-- Biggest uncertainty.
-- Most interesting discovery.
-- Possible story angle.
+## B. PORMPT.MD — VISUAL, PROMPT VÀ RIGHTS
 
----
+`Pormpt.md` phải chứa:
 
-## B. SOURCE TABLE
+1. **Master media map:** timestamp, visual purpose, loại REAL/AI/DOCUMENT/MOTION GRAPHIC, duration dùng cuối, source/prompt ID, transition vào/ra và status.
+2. **Visual asset plan:** asset thật có direct item URL; tài liệu có source/page; AI có label `[AI-NOT-EVIDENCE]` và factual guardrail.
+3. **Prompt AI đầy đủ:** timed action, composition, camera, continuity, constraints, reference ownership, model/date/output và QA.
+4. **Asset registry:** owner, license, commercial/derivative rights, attribution, proof, AI provenance, disclosure và APPROVED/HOLD/REJECT.
+5. **Human review flags:** asset chưa rõ quyền, AI cần disclosure, continuity/factual issue và visual/release sign-off.
 
-Mỗi source phải có:
-
-Source ID
-
-Title
-
-Publisher
-
-Author
-
-Publication date
-
-Last updated date
-
-Data period
-
-Date accessed
-
-Forecast horizon
-
-URL
-
-Tier
-
-Provenance
-
-Relevant sections
-
-Reliability notes
-
-Independence / Methodology
-
----
-
-## C. EVIDENCE LEDGER
-
-Mỗi important claim map tới Evidence ID.
-
----
-
-## D. VISUAL ASSET PLAN
-
-Ví dụ:
-
-V001
-
-Type: DOCUMENT
-
-Source: S003
-
-Page: 24
-
-Asset: electricity forecast graph
-
-Rights status: PENDING — verify public-domain status before use
-
-Use:
-
-Zoom from full page → highlight forecast line.
-
-Narration:
-
-“After years of nearly flat demand, electricity consumption is beginning to rise again.”
-
----
-
-## E. SCRIPT
-
-Script nên được annotate.
-
-Ví dụ:
-
-[00:00–00:08]
-
-[VO]
-
-Northern Virginia contains one of the largest concentrations of data centers on Earth.
-
-[VISUAL-REAL]
-
-Aerial footage / satellite view of Northern Virginia.
-
-[EVIDENCE: E003]
-
----
-
-[00:08–00:18]
-
-[VO]
-
-But the industry's biggest constraint may no longer be land.
-
-[VISUAL-DOC]
-
-Utility planning report.
-
-Highlight projected electricity demand.
-
-[EVIDENCE: E005]
-
----
-
-[00:18–00:28]
-
-[VO]
-
-It may be electricity — or more precisely, how quickly the grid can deliver it.
-
-[VISUAL-AI]
-
-Stylized but clearly illustrative visualization:
-
-data center → transmission bottleneck → power plant.
-
-[AI-NOT-EVIDENCE]
-
----
-
-## F. HUMAN REVIEW FLAGS
-
-Cuối output phải có:
-
-**Claims requiring verification**
-
-**Assets with unclear rights**
-
-**Sources with potential conflicts of interest**
-
-**AI visuals requiring disclosure review**
-
-**Unresolved factual conflicts**
-
-**Statements that are inference rather than fact**
+Source Table, Evidence Ledger, Visual Asset Plan, annotated script và Human Review Flags vẫn là thành phần bắt buộc về dữ liệu; chúng không còn là sáu file/deliverable độc lập.
 
 ---
 

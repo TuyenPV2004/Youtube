@@ -1,11 +1,13 @@
 # CHECKLIST KIỂM TRA KỊCH BẢN DOCUMENTARY / VIDEO ESSAY
 
-> Version: 1.0  
+> Version: 2.1
 > Last verified: 2026-08-11  
 > Phạm vi: curiosity documentary tiếng Anh hướng đến khán giả quốc tế
 > Cách dùng: đánh dấu **PASS / FAIL / N/A** và ghi bằng chứng kiểm tra. Không được chọn N/A nếu không nêu lý do.
 
 Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đọc, dựng hình và xuất bản. Nó không thay thế tư vấn pháp lý. Chính sách nền tảng có thể thay đổi; trước mỗi lần xuất bản phải kiểm tra các liên kết chính thức trong [Google.md](Google.md).
+
+Kết quả checklist không tạo thành file riêng: story/fact/voice sign-off được ghi trong **Kich_Ban.md**; visual/rights/disclosure sign-off được ghi trong **Pormpt.md**.
 
 ## Quy tắc ra quyết định
 
@@ -31,7 +33,7 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 
 | Trạng thái | Điều kiện bắt buộc | Bằng chứng / ghi chú |
 |---|---|---|
-| ☐ | 🛑 Mỗi factual claim quan trọng đã có nguồn phù hợp và dòng tương ứng trong Claim Ledger. | |
+| ☐ | 🛑 Mỗi factual claim quan trọng đã có nguồn phù hợp và dòng tương ứng trong bảng Evidence & Sources của `Kich_Ban.md`. | |
 | ☐ | 🛑 Không có số liệu, trích dẫn, sự kiện hoặc URL do AI bịa ra. | |
 | ☐ | 🛑 Mọi ảnh, video, nhạc, bản đồ, biểu đồ và tài liệu bên ngoài đều có trạng thái quyền **APPROVED** trước khi dựng. | |
 | ☐ | 🛑 Hình AI không được dùng làm bằng chứng cho sự kiện có thật. | |
@@ -74,7 +76,7 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 
 ### 4.2 Độ mới
 
-- [ ] Source Table có publication date, last updated, data period và accessed date.
+- [ ] Bảng Evidence & Sources trong `Kich_Ban.md` có publication date, last updated, data period và accessed date khi các trường đó liên quan.
 - [ ] Số liệu thay đổi theo thời gian đã dùng nguồn mới nhất phù hợp.
 - [ ] Forecast ghi rõ forecast horizon, giả định và tổ chức dự báo.
 - [ ] Tài liệu cũ được dùng vì giá trị lịch sử, không bị trình bày như hiện trạng.
@@ -134,9 +136,9 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 
 ## 8. Sẵn sàng cho ElevenLabs
 
-- [ ] Đã tạo bản **Clean VO** không chứa citation, tag visual hoặc ghi chú dựng.
+- [ ] Cột **Lời thoại / Voiceover** trong `Kich_Ban.md` là bản clean, không chứa citation, tag visual hoặc ghi chú dựng.
 - [ ] Tên riêng, địa danh, acronym, số, ngày tháng và ký hiệu có cách đọc thống nhất.
-- [ ] Có pronunciation list cho từ dễ đọc sai.
+- [ ] Có mục pronunciation gọn trong `Kich_Ban.md` cho từ dễ đọc sai.
 - [ ] Câu dài đã được tách theo ý nghĩa, không tách cơ học giữa chủ ngữ và vị ngữ.
 - [ ] Pause được tạo bằng dấu câu, xuống đoạn hoặc audio tag phù hợp với model; không lạm dụng SSML.
 - [ ] Đoạn văn được chia thành chunk theo section để dễ tạo lại và giữ nhịp.
@@ -155,6 +157,8 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
   - [ ] **[VISUAL-AI]** cho hình tổng hợp minh họa.
   - [ ] **[ON-SCREEN-TEXT]** cho chữ cần hiển thị.
 - [ ] Evidence visual xuất hiện ở đúng claim mà nó hỗ trợ.
+- [ ] Mỗi `[VISUAL-REAL]` có brief tự tìm chi tiết trong `Pormpt.md`: nội dung bắt buộc, action, composition, camera, light/color, format, duration, entry/exit frame, continuity, factual limit, reject criteria và search terms.
+- [ ] Link footage thật chỉ được coi là candidate; đã xem frame thật và xác nhận nó khớp brief trước khi APPROVED.
 - [ ] AI visual không thay thế tài liệu có thật khi tài liệu đó là trọng tâm chứng minh.
 - [ ] Visual nhạy cảm không gây sốc chỉ để tăng retention.
 - [ ] Chart có nguồn, đơn vị, kỳ dữ liệu và nhãn dễ đọc trên điện thoại.
@@ -168,15 +172,15 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 - [ ] Có negative constraints cho lỗi giải phẫu, chữ giả, logo, vật thể sai thời đại và “AI look”.
 - [ ] Nếu dùng người có thật, thương hiệu, địa điểm hoặc sự kiện có thật, đã đánh giá nguy cơ gây hiểu lầm và quyền liên quan.
 - [ ] Reference/Ingredients sạch, nền đơn giản và không mâu thuẫn với prompt.
-- [ ] Các shot cùng scene dùng continuity sheet: nhân vật, trang phục, thời tiết, thời điểm, hướng sáng, bảng màu.
+- [ ] Các shot cùng scene ghi continuity ngay trong `Pormpt.md`: nhân vật, thời tiết, thời điểm, hướng sáng, bảng màu và frame vào/ra.
 - [ ] Ảnh đã được kiểm tra ở 100% zoom: tay, mắt, răng, chữ, phản chiếu, bóng, hình học và chi tiết lặp.
 - [ ] Hình bị đánh giá là “có thể bị nhầm là tư liệu thật” đã được gắn nhãn nội bộ và đưa vào quyết định disclosure.
-- [ ] Prompt, model, reference và asset đầu ra được lưu trong production log.
+- [ ] Prompt, model, reference và asset đầu ra được lưu trong asset registry của `Pormpt.md`.
 - [ ] Hướng dẫn chi tiết trong [Bố_Cục_prompt.md](Bố_Cục_prompt.md) đã PASS.
 
 ## 11. Bản quyền và quyền đối với asset
 
-- [ ] Mỗi asset có Rights Ledger riêng; “tìm thấy trên Google/YouTube” không phải là giấy phép.
+- [ ] Mỗi asset có một hàng quyền sử dụng trong asset registry của `Pormpt.md`; “tìm thấy trên Google/YouTube” không phải là giấy phép.
 - [ ] Đã ghi owner, source URL, license/version, commercial use, derivatives, attribution, territory, expiry và proof.
 - [ ] Asset **PENDING**, **UNKNOWN** hoặc **BLOCKED** không xuất hiện trong timeline cuối.
 - [ ] Public domain đã được xác minh theo từng asset; footage của chính phủ không mặc nhiên luôn public domain.
@@ -207,7 +211,7 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 - [ ] Không có hai đoạn liên tiếp cùng nhịp và cùng cấu trúc câu kéo dài.
 - [ ] Mọi con số quan trọng đều dễ nghe và có điểm neo so sánh.
 - [ ] Không có citation đọc thành lời ngoài ý muốn.
-- [ ] Không có instruction nội bộ lọt vào Clean VO.
+- [ ] Không có instruction nội bộ lọt vào cột Voiceover của `Kich_Ban.md`.
 - [ ] Tổng word count phù hợp target duration sau khi tính pause.
 - [ ] Cắt mọi câu không tạo meaning, evidence, tension hoặc transition.
 - [ ] Một người không tham gia research đã nghe/đọc và diễn đạt đúng luận điểm chính.

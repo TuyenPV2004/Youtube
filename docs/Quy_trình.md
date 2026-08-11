@@ -1,6 +1,6 @@
 # QUY TRÌNH SẢN XUẤT DOCUMENTARY / VIDEO ESSAY TỪ ĐẦU ĐẾN CUỐI
 
-> Version: 1.0  
+> Version: 2.1
 > Last verified: 2026-08-11  
 > Phạm vi: curiosity documentary tiếng Anh hướng đến khán giả quốc tế, kết hợp tư liệu thật, tài liệu, ElevenLabs và hình tổng hợp bằng Google Flow
 > Nguyên tắc: **Evidence before narrative · Rights before edit · Human judgment before publish**
@@ -9,19 +9,25 @@ Quy trình này biến một ý tưởng thành video có thể xuất bản và
 
 ## 1. Bản đồ đầu ra
 
-| Giai đoạn | Đầu ra bắt buộc | Gate để đi tiếp |
+Mỗi ngôn ngữ chỉ có hai tài liệu Markdown chính. Quy trình vẫn thực hiện đầy đủ các gate, nhưng không tạo file riêng cho từng gate:
+
+- **Kich_Ban.md:** metadata, hướng đi chung, timeline 5 cột, toàn bộ voiceover, research/evidence/source, pronunciation và story/fact sign-off.
+- **Pormpt.md:** master media map, prompt AI, brief tự tìm footage thật, link ứng viên, chuyển cảnh, quyền/provenance, cue âm thanh, disclosure và visual/release sign-off.
+
+Thư mục **eng/** và **vie/** mỗi bên phải chứa đúng hai file trên và không có thư mục con. Media, audio, project dựng, caption và proof phải nằm ở cấp project bên ngoài hai thư mục ngôn ngữ.
+
+| Giai đoạn | Ghi vào đâu | Gate để đi tiếp |
 |---|---|---|
-| Discovery | Discovery Log + shortlist | Chủ đề có demand signal, fit và evidence potential |
-| Validation | Topic Scorecard | Đạt ngưỡng, không có red flag |
-| Research | Research Brief + Source Table | Câu hỏi đủ hẹp, nguồn đủ mạnh |
-| Evidence | Claim Ledger + Rights Ledger | Claim trọng yếu VERIFIED; asset APPROVED |
-| Story | Outline + annotated script | Lập luận hoàn chỉnh, original |
-| Voice | Clean VO + audio master | Phát âm, nhịp, quyền giọng PASS |
-| Visual | Shot list + asset package | Mỗi shot có purpose và rights status |
-| Edit | Picture lock + captions | Nội dung đúng, dễ theo dõi, không đánh lừa |
-| Compliance | Final checklist | Không còn blocker |
-| Publish | Metadata + disclosure + checks | Copyright/checks hoàn tất hoặc đã đánh giá |
-| Learn | Analytics review + postmortem | Có quyết định continue/refine/stop |
+| Discovery + Validation | `Kich_Ban.md` → metadata và hướng đi chung | Chủ đề có fit, evidence potential và không có red flag |
+| Research + Evidence | `Kich_Ban.md` → bảng Evidence & Sources | Claim trọng yếu VERIFIED; wording truy vết được |
+| Story + Voice | `Kich_Ban.md` → bảng timeline 5 cột | Lập luận hoàn chỉnh; cột Voiceover clean và đã duyệt |
+| Visual + Edit | `Pormpt.md` → media map, prompt và transition | Mỗi beat có purpose, loại visual, entry/exit và trạng thái |
+| Rights + Compliance | `Pormpt.md` → asset registry; sign-off ở cả hai file | Asset timeline APPROVED; không còn blocker |
+| Publish + Learn | Cập nhật mục sign-off/postmortem ngắn trong hai file hiện có | Checks hoàn tất; có quyết định continue/refine/stop |
+
+Tên như Discovery Log, Source Table, Claim Ledger, Rights Ledger, Clean VO, shot list, prompt log, cue sheet hoặc checklist trong các bước bên dưới là **nhóm dữ liệu/section**, không phải yêu cầu tạo thêm Markdown. Chỉ media, project dựng, caption sau picture lock và bằng chứng quyền dạng binary được lưu ngoài hai file này.
+
+Mỗi footage thật trong `Pormpt.md` phải có mô tả đủ để người dùng tự tìm mà không cần xem prompt AI: mục đích kể chuyện, hình bắt buộc, hành động, bố cục, camera, ánh sáng/màu, định dạng, thời lượng, frame vào/ra, continuity, factual limit, tiêu chí loại và từ khóa tìm. Link nguồn chỉ là candidate; footage không khớp mô tả phải bị thay dù license hợp lệ.
 
 ## 2. Quy ước trạng thái
 
@@ -654,7 +660,7 @@ Không thay đổi chiến lược từ một video đơn lẻ. Review mỗi bat
 
 ## BƯỚC 19 — Postmortem và cập nhật hệ thống
 
-Điền:
+Điền vào mục postmortem ngắn của hai tài liệu hiện có:
 
 ~~~text
 Video:
@@ -683,9 +689,9 @@ Một video chỉ hoàn tất khi:
 - analysis nguyên bản là giá trị trung tâm;
 - asset trên timeline đều APPROVED;
 - AI visual không đóng vai evidence và disclosure đúng;
-- Clean VO, captions và visual truyền đạt nhất quán;
+- Voiceover trong `Kich_Ban.md`, captions và visual truyền đạt nhất quán;
 - checklist policy/advertiser/copyright không còn blocker;
-- project lưu Source Table, Claim Ledger, Rights Ledger, prompt log và production log;
+- `Kich_Ban.md` lưu đủ evidence/source; `Pormpt.md` lưu đủ asset rights, prompt/provenance và production status;
 - đã xác định lịch analytics review.
 
 ### Tài liệu liên quan
