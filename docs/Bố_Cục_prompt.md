@@ -1,6 +1,6 @@
 ---
 title: "Bố cục prompt hình ảnh photorealistic cho Google AI Pro / Flow"
-version: "1.4.0"
+version: "1.5.0"
 last_verified: "2026-08-12"
 scope: "Google Flow, Nano Banana, Ingredients/References, Veo và Gemini Omni"
 status: "Production guide"
@@ -326,6 +326,10 @@ Flow hỗ trợ dùng Ingredients để giữ nhân vật/vật thể và Frames
 Trong `Pormpt.md`, **mỗi hàng timeline** phải có ít nhất một prompt video hoàn chỉnh và có thể copy trực tiếp, kể cả khi asset chính là footage thật hoặc graphic. Prompt tại các hàng đó là phương án bổ sung/thay thế hoặc motion reference; nó không đổi loại asset chính. Bản ENG dùng prompt tiếng Anh; bản VIE dùng prompt tiếng Việt đầy đủ, tự nhiên và không dùng chỉ dẫn kiểu “xem bản ENG”.
 
 Hai bản phải giữ cùng Asset ID, duration, timecode, hành động, camera và negative constraints. Bản VIE không được giữ nguyên prompt tiếng Anh hoặc dịch từng chữ làm sai thuật ngữ sản xuất hình ảnh.
+
+Trước khi viết prompt chi tiết, audit cả chuỗi theo năm trường: **chủ thể · hành động · quy mô · hình thức biểu đạt · thông tin mới**. Không duyệt hai prompt liền nhau chỉ vì câu chữ khác nếu output dự kiến vẫn là cùng một cảnh. Thay đổi lens, ánh sáng, thời tiết, màu hoặc camera movement không được tính là một visual idea mới.
+
+Ví dụ cần tránh: ba prompt liên tiếp đều tạo `trời bão + tháp cao + sét`, dù một prompt dùng wide shot, một prompt dùng telephoto và một prompt đổi hình tia sét. Hướng đúng là chuyển chức năng và visual mode, ví dụ: **hiện tượng thật → thiết bị ghi nhận sự lặp lại → mô hình nhiều ứng viên trong điện trường**.
 
 Cột cuối mang tên `Prompt Gemini Omni` và chỉ chứa prompt tạo video. Không đặt hướng dẫn cắt dựng, transition, overlay, compositing, typography hoặc color grading trong cột này.
 

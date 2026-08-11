@@ -1,6 +1,6 @@
 # QUY TẮC BẮT BUỘC CHO AI TRONG DỰ ÁN YOUTUBE
 
-> Version: 2.6.0
+> Version: 2.7.0
 > Last updated: 2026-08-12  
 > Phạm vi: toàn bộ công việc nghiên cứu, viết kịch bản, tạo voice, tạo visual, dựng, xuất bản và phân tích video trong repository này.
 
@@ -178,6 +178,11 @@ Giữ chính xác tên **Pormpt.md** theo quy ước của người dùng. Khôn
 - bản **eng/Pormpt.md** phải viết toàn bộ prompt Gemini Omni bằng tiếng Anh;
 - bản **vie/Pormpt.md** phải dịch và viết toàn bộ prompt Gemini Omni bằng tiếng Việt tự nhiên, đầy đủ; không giữ prompt tiếng Anh và không ghi “xem bản ENG”;
 - hai bản phải khớp về ý nghĩa, Asset ID, duration, timecode, hành động, camera và negative constraints; không dịch máy móc làm sai thuật ngữ hoặc ý nghĩa hình ảnh;
+- trước khi viết prompt, mỗi hàng phải có **visual fingerprint** gồm: chủ thể chính · hành động thị giác · quy mô · hình thức biểu đạt · thông tin mới;
+- hai hàng liền kề không được lặp cùng chủ thể, bối cảnh và hành động cốt lõi rồi chỉ đổi lens, ánh sáng, thời lượng, chuyển động camera hoặc câu chữ;
+- continuity phải đến từ logic kể chuyện. Không bắt buộc giữ cùng vật thể trên màn hình; có thể chuyển từ hiện tượng → bằng chứng → hệ thống → cơ chế → hậu quả miễn quan hệ nhân quả rõ;
+- nếu hai cảnh liền nhau trùng từ ba thành phần visual fingerprint trở lên, phải thiết kế lại ít nhất một cảnh bằng một visual mode khác như measurement, macro, cutaway, 2D, 3D, comparison, infrastructure hoặc human consequence;
+- chỉ cho phép lặp hình ảnh có chủ ý khi đó là callback/payoff và cảnh lặp mang ý nghĩa mới đã được mô tả rõ;
 - không có cột **Trạng thái/Status** và không thêm các section riêng: **Motion graphic và factual guardrail**, **Quyền và release gate**, **Final gate**, **Production** hoặc **Public release**.
 
 ## 8. Đầu ra research bắt buộc trong từng project

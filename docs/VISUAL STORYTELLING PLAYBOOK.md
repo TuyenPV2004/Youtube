@@ -1,6 +1,6 @@
 ---
 title: "Visual Storytelling Playbook"
-version: "1.6.0"
+version: "1.7.0"
 last_updated: "2026-08-12"
 scope: "Mọi video documentary, video essay, short test và prompt AI trong repository"
 status: "Mandatory production guide"
@@ -288,6 +288,19 @@ Timeline edit map dùng đúng sáu cột:
 - Hai bản phải khớp Asset ID, duration, timecode, hành động, camera và negative constraints; không để prompt tiếng Anh trong bản VIE và không dẫn người dùng sang bản ENG.
 - Nếu một hàng cần nhiều clip AI, đặt các prompt con có Asset ID riêng trong cùng ô; mỗi clip dài 4–10 giây và có timed action độc lập.
 - Không có cột `Status/Trạng thái`; không thêm Motion graphic/factual guardrail, rights/release gate, final gate, Production hoặc Public release vào `Pormpt.md`.
+
+### Continuity without repetition
+
+Mỗi hàng timeline phải khai báo trong cột Nội dung một **visual fingerprint**:
+
+> Chủ thể chính · Hành động thị giác · Quy mô · Hình thức biểu đạt · Thông tin mới
+
+- Prompt khác câu chữ không có nghĩa là cảnh khác. Lens, crop, ánh sáng, màu, duration hoặc camera movement chỉ là thuộc tính hình thức.
+- Hai cảnh liền kề không được giữ đồng thời cùng chủ thể, bối cảnh và hành động cốt lõi.
+- Nếu hai visual fingerprint trùng từ ba thành phần trở lên, một cảnh phải đổi visual mode hoặc chức năng kể chuyện.
+- Chuỗi tốt giữ continuity bằng logic: observation → evidence → system → mechanism → consequence; không cần giữ cùng một vật thể trong mọi cảnh.
+- Intentional repetition chỉ được dùng cho callback/payoff, khi hình ảnh cũ trở lại với meaning mới.
+- Trước khi khóa prompt, đọc tên chủ thể và động từ của toàn bộ timeline thành một danh sách. Nếu xuất hiện cụm lặp liên tiếp như `tower → tower → tower` hoặc `strike → strike → strike`, thiết kế lại trước khi tinh chỉnh prompt.
 
 ## 11. Prompt gate bắt buộc
 
