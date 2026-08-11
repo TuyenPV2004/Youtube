@@ -10,7 +10,7 @@ status: "Production guide"
 
 ## 1. Mục tiêu
 
-Tài liệu này chuẩn hóa narration tiếng Anh cho kênh documentary/video essay hướng đến khán giả Hoa Kỳ.
+Tài liệu này chuẩn hóa narration tiếng Anh cho kênh curiosity documentary/video essay hướng đến khán giả quốc tế.
 
 Giọng cần:
 
@@ -19,7 +19,7 @@ Giọng cần:
 - Nghe như một narrator đang khám phá câu chuyện cùng người xem.
 - Có nhịp và contrast nhưng không giống quảng cáo, trailer hoặc bản tin giật gân.
 - Ổn định qua nhiều episode.
-- Đọc chính xác tên cơ quan, công ty, địa điểm, số liệu và đơn vị kỹ thuật.
+- Đọc chính xác tên loài, hiện tượng, cơ quan khoa học, địa điểm, số liệu và đơn vị đo.
 
 Nguồn sản phẩm chính thức: [ElevenLabs — Text to Speech](https://elevenlabs.io/docs/speech-synthesis/voice-settings).
 
@@ -142,7 +142,7 @@ Chấm từng voice:
 | Nhịp câu ngắn và dài | |
 | Không bị “AI announcer” | |
 | Consistency giữa các take | |
-| Phù hợp niche infrastructure/technology | |
+| Phù hợp curiosity/mystery documentary | |
 
 Giữ cùng text và settings khi A/B để tránh so sánh sai.
 
@@ -234,7 +234,7 @@ Chọn cách đọc số theo context, không áp dụng máy móc:
 - “twenty twenty-four” phù hợp năm.
 - “two thousand twenty-four” có thể phù hợp văn phong khác.
 - “twelve hundred megawatts” thường tự nhiên hơn “one thousand two hundred megawatts”.
-- Với audience quốc tế, có thể đọc đơn vị Mỹ trước rồi quy đổi: “sixty miles — about ninety-seven kilometers”.
+- Với audience quốc tế, ưu tiên metric; thêm đơn vị địa phương khi hữu ích: “ninety-seven kilometers — about sixty miles”.
 
 ### 7.2. Acronym
 
@@ -276,15 +276,14 @@ Eleven v3 **không hỗ trợ SSML break tags**. Dùng:
 Ví dụ:
 
 ~~~text
-[curious] AI needs power.
+[curious] The stones move across the desert.
 
-A lot of it.
+But no one saw them move for decades.
 
-And the companies building America's largest data centers are discovering
-that getting enough electricity is much harder than building another server
-hall.
+Then, one winter morning, the first clue appeared:
+a sheet of ice, thinner than a windowpane.
 
-The grid moves SLOWER.
+The answer was hiding in plain sight.
 ~~~
 
 Tags như [curious], [whispers], [sighs] và các mô tả cảm xúc phụ thuộc mạnh vào voice. Không ép một neutral voice thực hiện delivery trái với character của nó. Nguồn: [ElevenLabs — Prompting Eleven v3](https://elevenlabs.io/docs/best-practices/prompting).

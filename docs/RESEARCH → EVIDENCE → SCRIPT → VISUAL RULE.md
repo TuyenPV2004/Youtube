@@ -10,6 +10,8 @@ Tài liệu này quản lý cách tìm nguồn, đánh giá evidence, xây claim
 
 Các tài liệu chuyên trách được áp dụng theo phạm vi: [Quy_trình.md](Quy_trình.md) quyết định thứ tự thao tác, [Check_List.md](Check_List.md) quyết định quality/policy gate, [Bố_Cục_prompt.md](Bố_Cục_prompt.md) quyết định cấu trúc prompt visual, [ElevenLabs.md](ElevenLabs.md) quyết định voice/TTS delivery và [Google.md](Google.md) quyết định yêu cầu Google/YouTube hiện hành. Các tài liệu chuyên trách được ưu tiên trong phạm vi của chúng.
 
+> **Lưu ý định hướng 2.0:** Các đoạn data center/power grid trong tài liệu này là case study cũ để minh họa phương pháp evidence, claim ledger và annotated script. Chúng không còn là topic direction. Khi áp dụng, thay case study bằng một hiện tượng thuộc Strange Nature, Animal Mysteries, Human Body, Everyday Physics, Scientific Mysteries hoặc Extreme Earth.
+
 ## 1. MỤC TIÊU
 
 AI không được tạo kịch bản bằng cách tổng hợp ngẫu nhiên thông tin trên Internet.

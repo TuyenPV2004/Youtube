@@ -10,6 +10,8 @@ Tài liệu này điều chỉnh prose, narrative rhythm, clarity, tone và các
 
 Các tài liệu chuyên trách được áp dụng theo phạm vi: [Quy_trình.md](Quy_trình.md) quản lý workflow, [Check_List.md](Check_List.md) quản lý final gate, [Bố_Cục_prompt.md](Bố_Cục_prompt.md) quản lý visual prompt, [ElevenLabs.md](ElevenLabs.md) quản lý pronunciation/pacing/chunking và [Google.md](Google.md) quản lý yêu cầu nền tảng. Nếu có xung đột kỹ thuật, áp dụng tài liệu chuyên trách; file này vẫn là nguồn chuẩn cho editorial voice.
 
+> **Lưu ý định hướng 2.0:** Các đoạn data center/power grid bên dưới là ví dụ prose từ phiên bản cũ. Chúng chỉ minh họa clarity, causality và rhythm; không còn xác định niche. Editorial voice hiện tại phải đặt **observable mystery trước scientific explanation** và tránh cảm giác bài giảng.
+
 ## 1. MỤC TIÊU
 
 Phong cách viết của kênh phải giúp người xem:

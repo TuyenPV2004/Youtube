@@ -44,7 +44,7 @@ Nguồn chính: [YouTube channel monetization policies](https://support.google.c
 | YPP mở rộng | 500 subscribers, 3 public uploads hợp lệ trong 90 ngày và **một trong hai**: 3.000 valid public watch hours trong 12 tháng hoặc 3 triệu valid public Shorts views trong 90 ngày | Fan funding như Memberships, Super Chat, Super Stickers, Super Thanks và một số tính năng Shopping nếu đáp ứng điều kiện riêng |
 | Chia sẻ doanh thu quảng cáo | 1.000 subscribers và **một trong hai**: 4.000 valid public watch hours trong 12 tháng hoặc 10 triệu valid public Shorts views trong 90 ngày | Watch Page Ads, Shorts Feed Ads và YouTube Premium, ngoài các tính năng đủ điều kiện ở cấp trước |
 
-Việt Nam nằm trong danh sách khu vực đã triển khai YPP mở rộng. Khán giả mục tiêu là Hoa Kỳ không thay đổi ngưỡng đăng ký; điều kiện dựa vào kênh, quốc gia/khu vực được hỗ trợ và các chính sách liên quan. Nguồn: [Expanded YouTube Partner Program](https://support.google.com/youtube/answer/13429240?hl=en), [Choose how to monetize](https://support.google.com/youtube/answer/94522?hl=en), [Expanded YPP availability](https://support.google.com/youtube/troubleshooter/13536952?hl=en).
+Việt Nam nằm trong danh sách khu vực đã triển khai YPP mở rộng. Việc kênh hướng đến khán giả quốc tế không thay đổi ngưỡng đăng ký; điều kiện dựa vào kênh, quốc gia/khu vực được hỗ trợ và các chính sách liên quan. Nguồn: [Expanded YouTube Partner Program](https://support.google.com/youtube/answer/13429240?hl=en), [Choose how to monetize](https://support.google.com/youtube/answer/94522?hl=en), [Expanded YPP availability](https://support.google.com/youtube/troubleshooter/13536952?hl=en).
 
 ### 2.2. Điều kiện nền tảng bắt buộc
 
@@ -295,7 +295,7 @@ Không có:
 
 Attribution không thay permission. License chỉ bảo vệ trong phạm vi quyền được cấp và khi người cấp thực sự có quyền. YouTube cũng lưu ý Content ID có thể claim chỉ vài giây và hệ thống không tự xác định fair use. Nguồn: [Fair use on YouTube](https://support.google.com/youtube/answer/9783148?hl=en), [U.S. Copyright Office Fair Use FAQ](https://www.copyright.gov/help/faq/faq-fairuse.html).
 
-Do creator có thể ở Việt Nam, footage có thể đến từ nhiều nước và audience ở Hoa Kỳ, không mặc định mọi tranh chấp đều chỉ áp dụng luật fair use của Hoa Kỳ. Copyright exceptions khác nhau theo quốc gia; vụ việc có giá trị cao hoặc rủi ro cao cần luật sư phù hợp thẩm quyền. Nguồn: [Fair use on YouTube](https://support.google.com/youtube/answer/9783148?hl=en).
+Do creator có thể ở Việt Nam, footage có thể đến từ nhiều nước và audience mang tính quốc tế, không mặc định mọi tranh chấp đều chỉ áp dụng luật fair use của Hoa Kỳ. Copyright exceptions khác nhau theo quốc gia; vụ việc có giá trị cao hoặc rủi ro cao cần luật sư phù hợp thẩm quyền. Nguồn: [Fair use on YouTube](https://support.google.com/youtube/answer/9783148?hl=en).
 
 ---
 

@@ -10,12 +10,12 @@ status: "Production guide"
 
 ## 1. Mục tiêu
 
-Tài liệu này dùng để tạo hình ảnh và cảnh minh họa AI cho kênh documentary/video essay tiếng Anh về:
+Tài liệu này dùng để tạo hình ảnh và cảnh minh họa AI cho kênh curiosity documentary/video essay tiếng Anh về:
 
-- Hạ tầng Hoa Kỳ.
-- Power grid và năng lượng.
-- Data center và AI infrastructure.
-- Công nghiệp, logistics và công nghệ vật lý.
+- Hiện tượng tự nhiên và Extreme Earth.
+- Động vật và cơ thể người.
+- Vật lý đời thường.
+- Những mystery trong thế giới thật có thể giải thích bằng khoa học.
 
 Mục tiêu hình ảnh:
 
@@ -31,7 +31,7 @@ Mục tiêu hình ảnh:
 
 Không được:
 
-- Dùng hình AI để chứng minh một nhà máy, data center, trạm điện hoặc sự kiện có thật.
+- Dùng hình AI để chứng minh một hiện tượng, loài vật, địa điểm, cấu trúc địa chất hoặc sự kiện có thật.
 - Gọi hình AI là “archival footage”, “satellite image”, “security footage” hoặc “photo from the site”.
 - Tạo chi tiết kỹ thuật bằng AI rồi dùng chính chi tiết đó làm factual claim.
 - Dùng hình AI của một địa điểm cụ thể khi chưa có reference đáng tin cậy, rồi ngụ ý đó là địa điểm thật.
@@ -185,7 +185,9 @@ Các lựa chọn dưới đây là baseline nhiếp ảnh, không phải cam k�
 
 Tránh yêu cầu đồng thời golden hour, fluorescent light, moonlight và studio rim light nếu không có lý do vật lý.
 
-## 7. Ví dụ theo niche Hoa Kỳ
+## 7. Ví dụ kỹ thuật về prompt composition
+
+> Các ví dụ data center/power grid bên dưới chỉ minh họa cấu trúc prompt photorealistic và continuity từ phiên bản cũ; chúng không xác định niche hoặc lịch nội dung hiện tại. Khi sản xuất, thay subject bằng hiện tượng khoa học thật và áp dụng factual guardrail tương ứng.
 
 ### 7.1. Data center campus và power grid
 
@@ -497,4 +499,3 @@ Nguồn kiểm tra:
 - [Veo video generation](https://ai.google.dev/gemini-api/docs/video)
 - [YouTube altered/synthetic disclosure](https://support.google.com/youtube/answer/14328491)
 - [YouTube channel monetization policies](https://support.google.com/youtube/answer/1311392?hl=en)
-

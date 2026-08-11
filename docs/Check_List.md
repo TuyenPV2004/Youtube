@@ -2,7 +2,7 @@
 
 > Version: 1.0  
 > Last verified: 2026-08-11  
-> Phạm vi: video tiếng Anh hướng đến khán giả Hoa Kỳ  
+> Phạm vi: curiosity documentary tiếng Anh hướng đến khán giả quốc tế
 > Cách dùng: đánh dấu **PASS / FAIL / N/A** và ghi bằng chứng kiểm tra. Không được chọn N/A nếu không nêu lý do.
 
 Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đọc, dựng hình và xuất bản. Nó không thay thế tư vấn pháp lý. Chính sách nền tảng có thể thay đổi; trước mỗi lần xuất bản phải kiểm tra các liên kết chính thức trong [Google.md](Google.md).
@@ -24,7 +24,7 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 | Reviewer | |
 | Review date | |
 | Target duration | |
-| Primary audience | Người xem Hoa Kỳ quan tâm đến hidden systems / infrastructure / technology |
+| Primary audience | Người xem quốc tế tò mò về hiện tượng kỳ lạ trong thế giới thật; không giả định kiến thức chuyên môn |
 | Trạng thái cuối | GO / HOLD / REJECT |
 
 ## 2. Gate blocker trước khi đọc chi tiết
@@ -46,11 +46,12 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 ### 3.1 Topic fit
 
 - [ ] Chủ đề thuộc một content pillar đã xác định hoặc có lý do chiến lược để thử nghiệm.
-- [ ] Có thể mô tả chủ đề theo công thức **System + Conflict + Consequence** trong một câu.
+- [ ] Có thể mô tả chủ đề theo công thức **Observable Phenomenon + Hidden Mechanism + Satisfying Reveal** trong một câu.
 - [ ] Có một câu hỏi trung tâm rõ ràng, không phải chỉ là một danh từ rộng.
 - [ ] Có ít nhất một insight người xem khó nhận được từ phần tóm tắt tìm kiếm thông thường.
 - [ ] Có hệ quả cụ thể đối với con người, tiền, thời gian, an toàn, năng lượng hoặc đời sống hằng ngày.
-- [ ] Phù hợp với khán giả Hoa Kỳ nhưng không giả định mọi người xem có kiến thức chuyên ngành.
+- [ ] Câu hỏi có tính phổ quát, hiểu được ngoài một quốc gia và không giả định người xem có kiến thức chuyên ngành.
+- [ ] Mystery đến từ khoảng cách giữa observation và explanation, không đến từ việc che giấu fact hoặc giả vờ hiện tượng chưa có lời giải.
 
 ### 3.2 Promise và packaging
 
@@ -118,15 +119,16 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 - [ ] Có dấu ấn tác giả nhất quán: câu hỏi, logic, lựa chọn chứng cứ và kết luận.
 - [ ] Nếu dùng AI để research hoặc draft, người làm đã kiểm tra nguồn và viết lại theo lập luận riêng.
 
-## 7. Văn phong tiếng Anh cho khán giả Hoa Kỳ
+## 7. Văn phong tiếng Anh cho khán giả quốc tế
 
-- [ ] Dùng US English nhất quán: spelling, date format và thuật ngữ.
+- [ ] Dùng clear international English; có thể giữ US English nhất quán cho spelling và pronunciation.
+- [ ] Idiom, joke và tham chiếu văn hóa địa phương đã được thay hoặc giải thích khi không cần thiết cho câu chuyện.
 - [ ] Thuật ngữ kỹ thuật được giải thích ngay lần đầu bằng ngôn ngữ phổ thông.
 - [ ] Câu chủ yếu ngắn hoặc trung bình; một hơi đọc không chứa quá nhiều mệnh đề.
 - [ ] Đại từ tham chiếu rõ; người nghe audio-only vẫn biết “it”, “they”, “this” là gì.
 - [ ] Không dùng hype, moral panic, sáo ngữ AI hoặc câu chuyển quá khoa trương.
 - [ ] Không khái quát về nhóm quốc tịch, chủng tộc, tôn giáo, giới tính hoặc chính trị khi thiếu cơ sở.
-- [ ] Hệ đo lường phù hợp người Mỹ; nếu cần dùng cả US customary và metric.
+- [ ] Dùng metric làm chuẩn cho khán giả quốc tế; thêm đơn vị địa phương hoặc US customary khi nó giúp hiểu scale.
 - [ ] Con số then chốt và takeaway được đọc trong VO; không chỉ để trên chart.
 - [ ] Captions và transcript có thể truyền tải thông tin chính mà không cần nhìn hình.
 
@@ -234,4 +236,3 @@ Tài liệu này là cổng duyệt kịch bản trước khi tạo giọng đ�
 - [Altered or synthetic content disclosure](https://support.google.com/youtube/answer/14328491?hl=en)
 - [Copyright and fair use](https://support.google.com/youtube/answer/9783148?hl=en)
 - [Google AdSense invalid traffic](https://support.google.com/adsense/answer/2660562?hl=en)
-

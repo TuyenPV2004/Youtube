@@ -2,7 +2,7 @@
 
 > Version: 1.0  
 > Last verified: 2026-08-11  
-> Phạm vi: video tiếng Anh hướng đến khán giả Hoa Kỳ, kết hợp tư liệu thật, tài liệu, ElevenLabs và hình tổng hợp bằng Google Flow  
+> Phạm vi: curiosity documentary tiếng Anh hướng đến khán giả quốc tế, kết hợp tư liệu thật, tài liệu, ElevenLabs và hình tổng hợp bằng Google Flow
 > Nguyên tắc: **Evidence before narrative · Rights before edit · Human judgment before publish**
 
 Quy trình này biến một ý tưởng thành video có thể xuất bản và kiếm tiền theo hướng bền vững. Không có quy trình nào bảo đảm được duyệt YPP, không nhận claim/strike hoặc không bị hạn chế quảng cáo; mục tiêu ở đây là tạo dấu vết kiểm chứng và giảm rủi ro có hệ thống.
@@ -45,12 +45,12 @@ Ngăn AI hoặc xu hướng kéo kênh sang các chủ đề rời rạc.
 
 Viết một trang Channel Brief:
 
-- **Audience chính:** người trưởng thành ở Hoa Kỳ tò mò về những hệ thống ẩn bên dưới đời sống hằng ngày.
-- **Audience phụ:** người xem quốc tế có khả năng nghe tiếng Anh phổ thông.
-- **Promise:** giải thích một hệ thống phức tạp bằng câu chuyện cụ thể, chứng cứ rõ và hệ quả đời sống.
-- **Content pillars:** chọn 2–4 cụm, ví dụ energy grid, infrastructure, logistics, data centers/AI infrastructure.
+- **Audience chính:** người xem quốc tế có khả năng nghe tiếng Anh phổ thông, tò mò về những hiện tượng kỳ lạ trong thế giới thật.
+- **Audience phụ:** người yêu thiên nhiên, động vật, cơ thể người, vật lý đời thường, mystery và Extreme Earth.
+- **Promise:** bắt đầu từ một điều có thể quan sát, xây dựng mystery và dùng khoa học cùng chứng cứ để hé lộ cơ chế thật.
+- **Content pillars:** Strange Nature, Animal Mysteries, Human Body, Everyday Physics, Scientific Mysteries và Extreme Earth.
 - **Non-goals:** celebrity gossip, tin nóng thiếu chiều sâu, partisan outrage, medical/financial advice cá nhân.
-- **Voice:** curious, precise, restrained, human; không hype và không giả giọng phóng viên thời sự.
+- **Voice:** curious, precise, slightly mysterious, restrained, human; không giảng bài, không hype và không giả giọng kinh dị.
 - **Visual rule:** tư liệu thật và tài liệu là evidence; ảnh AI chỉ minh họa.
 
 ### Gate
@@ -85,16 +85,17 @@ Một ý tưởng không giải thích được vì sao thuộc lens của kênh
 - Không diễn giải chỉ số 0–100 như lượng tìm kiếm tuyệt đối.
 - Nguồn: [Google Trends](https://trends.google.com/trends/).
 
-#### C. Nguồn primary và authoritative tại Hoa Kỳ
+#### C. Nguồn primary và authoritative theo lĩnh vực
 
 Ưu tiên theo chủ đề:
 
-- Energy/electricity: [EIA](https://www.eia.gov/), [FERC](https://www.ferc.gov/), [NERC](https://www.nerc.com/), DOE và RTO/ISO khu vực.
-- Công ty niêm yết: [SEC EDGAR](https://www.sec.gov/edgar/search/) cho filing; nhớ ghi đây là nguồn tự thuật có lợi ích.
-- Kinh tế/lao động/dân số: [BLS](https://www.bls.gov/), [BEA](https://www.bea.gov/), [U.S. Census Bureau](https://www.census.gov/).
-- Giao thông: [Bureau of Transportation Statistics](https://www.bts.gov/), [FHWA](https://www.fhwa.dot.gov/), [FAA](https://www.faa.gov/).
-- Môi trường: [EPA](https://www.epa.gov/).
-- Giám sát/chính sách: [GAO](https://www.gao.gov/), [Congressional Research Service](https://crsreports.congress.gov/).
+- Khí tượng và khí hậu: WMO, NOAA, NASA, Met Office và cơ quan khí tượng quốc gia liên quan.
+- Địa chất, động đất và núi lửa: USGS, Smithsonian Global Volcanism Program và geological survey tại địa phương.
+- Đại dương: NOAA, UNESCO-IOC, Woods Hole và các viện hải dương học có dữ liệu/methodology rõ.
+- Sinh học và động vật: paper gốc, IUCN, bảo tàng lịch sử tự nhiên, đại học và tổ chức nghiên cứu chuyên ngành.
+- Cơ thể người: paper peer-reviewed, WHO, NIH, CDC, NHS và medical institution có chuyên môn phù hợp; không dùng để chẩn đoán cá nhân.
+- Vật lý và không gian: NASA, ESA, national laboratory, observatory, university và journal chuyên ngành.
+- Với case study tại Hoa Kỳ, có thể dùng EIA, EPA, NOAA, USGS, NASA, NIST, NIH và nguồn liên bang/bang phù hợp.
 - Paper: trang nhà xuất bản, DOI, arXiv chỉ khi hiểu trạng thái peer review; kiểm tra dữ liệu và phương pháp.
 
 #### D. Nguồn secondary chất lượng
@@ -116,12 +117,12 @@ Một ý tưởng không giải thích được vì sao thuộc lens của kênh
 
 Với mỗi seed topic, tìm lần lượt:
 
-1. **Hiện tượng:** “why are US data centers waiting for power”
-2. **Cơ chế:** “interconnection queue data center load methodology”
-3. **Primary record:** “site:ferc.gov data center load interconnection”
-4. **Số liệu:** “site:eia.gov electricity demand data centers report pdf”
-5. **Counterpoint:** “data center power demand overestimated critique”
-6. **Hệ quả con người:** “community electricity bills data center demand hearing”
+1. **Hiện tượng:** “why do birds survive sitting on power lines”
+2. **Cơ chế:** “why birds survive power lines electrical circuit primary source”
+3. **Primary record:** “site:usgs.gov moving rocks Death Valley explanation”
+4. **Số liệu:** “site:noaa.gov tornado wind speed damage path methodology”
+5. **Counterpoint:** “finger wrinkling water grip hypothesis critique study”
+6. **Hệ quả con người:** “tsunami warning natural signs public safety agency”
 
 Thay ví dụ bằng chủ đề thực tế. Dùng thêm:
 
@@ -172,9 +173,9 @@ Prompt discovery gợi ý:
 ~~~text
 You are a research planner, not a source of facts.
 
-Channel lens: [LENS]
-Target audience: U.S. general audience
-Seed topic: [TOPIC]
+Target audience: International general audience; clear English; no specialist knowledge assumed
+Channel lens: Real-world curiosity + mystery + scientific explanation
+Seed phenomenon: [PHENOMENON]
 
 Generate:
 1. 15 audience questions grouped by search intent.
